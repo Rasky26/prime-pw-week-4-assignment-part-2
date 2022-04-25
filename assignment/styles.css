@@ -1,0 +1,105 @@
+@import 'reset-css.css';
+
+:root {
+    /* Color palette */
+    --clr-primary: hsl(89, 47%, 54%);
+    --clr-secondary: hsl(89, 56%, 62%);
+    --clr-highlight: hsl(90, 80%, 98%);
+    --clr-lowlight: hsl(89, 47%, 24%);
+
+    /* Font weights */
+    --fw-light: 100;
+    --fw-regular: 300;
+    --fw-bold: 600;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--clr-primary);
+    border-bottom: 0.36ch var(--clr-lowlight) solid;
+    color: var(--clr-highlight);
+    padding: 2em 4.2em;
+}
+
+header > h1 {
+    font-weight: var(--fw-bold);
+    font-size: 2.26rem;
+}
+
+header > p {
+    margin-left: 2.5rem;
+    font-weight: var(--fw-light);
+}
+
+.info {
+    background-color: var(--clr-secondary);
+    border-bottom: 0.36ch var(--clr-lowlight) solid;
+    color: var(--clr-highlight);
+    padding: 12px;
+}
+
+.info > h2 {
+    text-align: center;
+    font-weight: var(--fw-regular);
+}
+
+.info > h2 > span {
+    font-weight: var(--fw-bold);
+    font-size: 1.86rem;
+    text-decoration: underline;
+    padding-left: 12px;
+}
+
+.card {
+    border: 1.26ch var(--clr-lowlight) solid;
+    border-radius: 4ch;
+    margin: auto;
+    margin-top: 4em;
+    padding: 20px;
+    width: 1080px;
+    box-shadow: 0px 0px 5px 12px var(--clr-highlight);
+}
+
+.card > h3 {
+    font-size: 2.26rem;
+    position: absolute;
+    translate: 100px -360px;
+}
+
+.card > h3 > span {
+    padding-left:  6ch;
+    color: var(--clr-lowlight);
+    font-size: 1.86rem;
+}
+
+img {
+    margin: auto;
+    margin-bottom: 28px;
+    width: 920px;
+    height: auto;
+}
+
+.card-background {
+    z-index: -1;
+}
+
+.card-background > img {
+    position: absolute;
+    z-index: inherit;
+    width: 1060px;
+    height: auto;
+    opacity: 0.2;
+    translate: -24px -24px;
+}
